@@ -8,9 +8,9 @@ import { Image } from 'astro:assets';
 import { brand } from '../config/brand';
 
 const team = [
-  { name: 'John Smith',   role: 'Founder & Lead Technician', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
-  { name: 'Maria Garcia', role: 'Operations Manager',        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80' },
-  { name: 'David Chen',   role: 'Senior Technician',         image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
+  { name: 'John Smith',    role: 'Founder & Lead Technician', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
+  { name: 'Maria Garcia', role: 'Operations Manager',         image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80' },
+  { name: 'David Chen',    role: 'Senior Technician',         image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
 ];
 ---
 
@@ -21,31 +21,69 @@ const team = [
 
   <!-- Story -->
   <section class="py-section">
-    <div class="mx-auto grid max-w-site grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14">
+    <div class="mx-auto grid max-w-site grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14 mb-16">
       <div class="overflow-hidden rounded-lg shadow-lg">
         <Image
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
+          src="https://images.unsplash.com/photo-1603201667230-bd139210db18?w=600&h=600&fit=crop&q=80"
           alt="Our team planning a project together"
           width={800}
-          height={600}
+          height={800}
           loading="lazy"
-          class="size-full object-cover"
+          class="aspect-square size-full object-cover"
         />
       </div>
       <div class="space-y-5">
-        <span class="text-topper font-bold uppercase tracking-widest text-accent">Our Story</span>
-        <h2 class="font-heading text-h2 font-bold uppercase text-text">Built on trust, driven by quality</h2>
+        <span class="text-topper font-bold uppercase tracking-widest text-accent">TL;DR</span>
+        <h2 class="font-heading text-h2 font-bold uppercase text-text">Sharing Knowledge, Driving Sustainability</h2>
         <p class="text-text-muted leading-relaxed">
-          What started as a one-person operation has grown into a trusted local team. For over 15 years, we've served homeowners and businesses with reliable, high-quality work — and we plan to keep doing just that for decades to come.
+          We are committed to the continuous development of good practices and the advancement of environmentally friendly green products by sharing the product knowledge with the home owners, contractors, and the developers in Myanmar.
         </p>
         <p class="text-text-muted leading-relaxed">
-          Every member of our crew is licensed, insured, and background-checked. We treat your property with the same care we'd give our own, and we stand behind every job with a satisfaction guarantee.
+          ကျွန်ုပ်တို့၏ ကုမ္ပဏီသည် ကောင်းမွန်သော ဆောက်လုပ်ရေးလုပ်ငန်း အလေ့အကျင့်များ ဖွံ့ဖြိုး တိုးတက်စေရန်နှင့် သဘာဝ ပတ်ဝန်းကျင်ကို ထိခိုက်မှုမရှိသော စိမ်းလန်း စိုပြည်ရေး ပစ္စည်းများ ဖွံဖြိုး တိုးတက်စေရန် အတွက်၊ ကုန်ပစ္စည်းဆိုင်ရာ အသိပညာများကို သုံးစွဲသူ အိမ်ပိုင်ရှင်များ၊ ကန်ထရိုက်တာများနှင့် ဆောက်လုပ်ရေး လုပ်ငန်းရှင်များအား ပြန်လည် မျှဝေပေးခြင်းဖြင့် ဝန်ဆောင်မှုများကို တစိုက်မတ်မတ် လုပ်ဆောင်နေပါသည်။
+        </p>
+      </div>
+    </div>
+
+    <!-- Who We Are Section Header -->
+    <div class="mx-auto mb-10 max-w-2xl text-center">
+      <span class="text-topper font-bold uppercase tracking-widest text-accent">Our Story</span>
+      <h2 class="mt-2 font-heading text-h2 font-bold uppercase text-text">Who We Are and What We Do</h2>
+    </div>
+
+    <!-- Two-Column Paragraphs Grid -->
+    <div class="mx-auto grid max-w-site grid-cols-1 items-start gap-8 px-4 sm:px-6 md:grid-cols-2 lg:gap-14">
+      <!-- Left Column (English Content) -->
+      <div class="space-y-4 text-text-muted leading-relaxed">
+        <p>
+          Founded in 2010, Premier Decorative Materials Trading Co., Ltd. is a leading supplier and distributor of top quality interior decoration materials such as Biowood, Lamitak, IdeaPaint, Daiken Ceiling, Armourcoat Polished Plaster, and Duroe Architectural Ironmongery for the residential houses and commercial projects in Myanmar.
+        </p>
+        <p>
+          With years of experience in interior decoration industry, we established the Premier Decorative Materials with customer satisfaction as the foundation. We want our customers to have solutions that are reliable, durable and cost effective in their projects.
+        </p>
+        <p>
+          Our Sales Engineers research from a wide range of construction materials and recommend for the individual needs of our customers based on their designs, needs and budget.
+        </p>
+        <p>
+          Our company is committed to the continuous development of good practices and the advancement of environmental friendly green materials in Myanmar by sharing the product knowledge with the owners, contractors, and the developers in Myanmar.
+        </p>
+      </div>
+
+      <!-- Right Column (Burmese Content) -->
+      <div class="space-y-4 text-text-muted leading-relaxed">
+        <p>
+          ၂၀၁၀ ခုနှစ်တွင် စတင် တည်ထောင်ခဲ့ပြီး Premier Decorative Materials Trading Co., Ltd. မှ အရည်အသွေးမြင့် အိမ်အတွင်းပိုင်း အလှဆင် ပစ္စည်းများ ဖြစ်ကြသော Biowood, Lamitak Laminate Sheet, IdeaPaint, Daiken Ceiling, Armourcoat Polished Plaster နှင့် Duroe Architectural Ironmongery တို့ကို မြန်မာနိုင်ငံ တစ်ဝှမ်းလုံးရှိ လူနေအိမ်များနှင့် စီးပွားရေး စီမံကိန်းများ အတွက် ဖြန့်ဖြူး ရောင်းချ တပ်ဆင် ပေးလျက်ရှိပါသည်။
+        </p>
+        <p>
+          အိမ်နှင့် အဆောက်အအုံ အတွင်းပိုင်း အလှဆင် လုပ်ငန်းတွင် နှစ်ပေါင်းများစွာ အတွေ့အကြုံဖြင့် ကျွန်ုပ်တို့ ကုမ္ပဏီသည် ဖောက်သည်များ၏ ကျေနပ်မှုကို အခြေခံ အုတ်မြစ်အဖြစ် ထားရှိကာ တည်ထောင် ထားပါသည်။ ကျွန်ုပ်တို့ ကုမ္ပဏီသည် ဖောက်သည်များ အားလုံးအတွက် ယုံကြည် စိတ်ချရပြီး၊ ရေရှည် အသုံးခံသော ပစ္စည်းများနှင့် တစ်ဦးချင်း လိုအပ်ချက်အတိုင်း အကောင်းဆုံး ဝန်ဆောင်မှုများကို ပေးနေပါသည်။
+        </p>
+        <p>
+          ကျွန်ုပ်တို့၏ ကုမ္ပဏီသည် ကောင်းမွန်သော ဆောက်လုပ်ရေးလုပ်ငန်း အလေ့အကျင့်များ ဆက်လက်ဖွံ့ဖြိုး တိုးတက်စေရန်နှင့် မြန်မာနိုင်ငံရှိ သဘာဝ ပတ်ဝန်းကျင်ကို ထိခိုက်မှုမရှိသော စိမ်းလန်း စိုပြည်ရေး ပစ္စည်းများ ဖွံဖြိုး တိုးတက်စေရန် အတွက်၊ ကုန်ပစ္စည်းဆိုင်ရာ အသိပညာများကို သုံးစွဲသူ အိမ်ပိုင်ရှင်များ၊ ကန်ထရိုက်တာများနှင့် မြန်မာနိုင်ငံရှိ ဆောက်လုပ်ရေး လုပ်ငန်းရှင်များအား ပြန်လည် မျှဝေပေးခြင်းဖြင့် ဝန်ဆောင်မှုများကို တစိုက်မတ်မတ် လုပ်ဆောင်နေပါသည်။
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Team -->
+  <!-- Team 
   <section class="bg-surface py-section">
     <div class="mx-auto max-w-site px-4 sm:px-6">
       <div class="mx-auto mb-10 max-w-2xl text-center">
@@ -72,7 +110,7 @@ const team = [
         ))}
       </div>
     </div>
-  </section>
+  </section> -->
 
   <CTA />
 
