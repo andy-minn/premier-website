@@ -11,28 +11,28 @@
  */
 
 export const client = {
-  name: 'Small Business Starter',
-  email: 'hello@example.com',
-  phoneForTel: '555-867-5309',
-  phoneFormatted: '(555) 867-5309',
+  name: "Premier Decorative Materials",
+  email: "info@premiermaterial.com",
+  phoneForTel: "09456783338",
+  phoneFormatted: "(09) 456-783-338",
   /** Business / contractor license number. Displayed in the header and footer
    *  as a trust signal. Set to an empty string to hide it. */
-  license: 'Lic# 123456',
+  license: "",
   address: {
-    lineOne: '123 Main Street',
-    lineTwo: 'Suite 100',
-    city: 'Denver',
-    state: 'CO',
-    zip: '80206',
-    country: 'US',
-    mapLink: 'https://maps.app.goo.gl/example',
+    lineOne: "No. 66/B, Wai Za Yan Tar Road,",
+    lineTwo: "",
+    city: "South Okkalapa Township",
+    state: "Yangon, Myanmar",
+    zip: "",
+    country: "MM",
+    mapLink: "https://maps.app.goo.gl/a8ydDhiDSqndviyQ9",
   },
   socials: {
-    facebook: 'https://www.facebook.com/',
-    instagram: 'https://www.instagram.com/',
-    google: 'https://www.google.com/maps',
+    facebook: "https://www.facebook.com/premierdecorativematerials/",
+    instagram: "https://www.instagram.com/premiermaterial/",
+    google: "https://maps.app.goo.gl/a8ydDhiDSqndviyQ9",
   },
-  domain: 'https://www.example.com',
+  domain: "https://www.premiermaterial.com",
 } as const;
 
 export type Client = typeof client;
