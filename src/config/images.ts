@@ -38,9 +38,9 @@ import type { ImageMetadata } from "astro";
 //   3. Replace the heroImage export at the bottom of this section
 //
 // import heroImage from '../assets/images/hero/hero.jpg';
-import heroImage from "../assets/images/hero/Biowood-slideshow-2.webp";
+import heroImg from "../assets/images/hero/Biowood-slideshow-2.webp";
 // export const heroImage: ImageMetadata | undefined = undefined;
-export const heroImage = heroImage;
+export const heroImage: ImageMetadata = heroImg;
 
 // ── About ─────────────────────────────────────────────────────────────────────
 // Recommended: portrait or square image of your team/job site, at least 900 × 700 px
@@ -51,9 +51,9 @@ export const heroImage = heroImage;
 //   3. Replace the aboutImage export at the bottom of this section
 //
 // import aboutImage from '../assets/images/about/team.jpg';
-import aboutImage from "../assets/images/about/IdeaPaint-slideshow-2.webp";
+import aboutImg from "../assets/images/about/IdeaPaint-slideshow-2.webp";
 // export const aboutImage: ImageMetadata | undefined = undefined;
-export const aboutImage = aboutImage;
+export const aboutImage: ImageMetadata = aboutImg;
 
 // ── Gallery — auto-discovered ─────────────────────────────────────────────────
 // Drop any number of image files into src/assets/images/gallery/ and they will
